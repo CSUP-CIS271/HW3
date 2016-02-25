@@ -17,9 +17,8 @@ public static void main(String[] args) throws FileNotFoundException{
 public static void reverse(String file) throws FileNotFoundException{
 	PrintStream output = new PrintStream(new File(file+"-Reveresed.txt"));
 	for(int i = arr1.size()-1; i>=0;i--){
-		String n = arr1.get(i);
 		String temp = "";
-		Scanner stringCheck = new Scanner(n);
+		Scanner stringCheck = new Scanner(arr1.get(i));
 		while(stringCheck.hasNext()){
 			temp = stringCheck.next() + " " +temp;
 		}
