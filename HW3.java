@@ -17,7 +17,7 @@ public class HW3 {
     ArrayList<String> text;
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        Scanner s = new Scanner(new File("Text.txt"));
+        Scanner s = new Scanner(new File("HW3.txt"));
         ArrayList<String> list = new ArrayList<String>();
         while (s.hasNextLine()) {
             list.add(s.nextLine());
@@ -28,7 +28,7 @@ public class HW3 {
             newList.add(reverse(list.get(i)));
         }
         
-        FileWriter writer = new FileWriter("OutputText.txt");
+        FileWriter writer = new FileWriter("OutputHW3.txt");
         for (String str : newList) {
             writer.write(str);
             writer.write(System.getProperty("line.separator"));
